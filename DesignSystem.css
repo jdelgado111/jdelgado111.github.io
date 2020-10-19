@@ -91,7 +91,7 @@ blockquote {
 }
 
 .placeholder-image {
-    background-image: url("../images/placeholder.png");
+    background-image: url("placeholder.png");
 }
 
 .caption {
@@ -229,15 +229,15 @@ blockquote {
 }
 
 .twit-icon {
-    background: url(../images/twitter.svg) no-repeat;
+    background: url(twitter.svg) no-repeat;
 }
 
 .face-icon {
-    background: url(../images/facebook.svg) no-repeat;
+    background: url(facebook.svg) no-repeat;
 }
 
 .link-icon {
-    background: url(../images/linkedin.svg) no-repeat;
+    background: url(linkedin.svg) no-repeat;
 }
 
 
@@ -262,7 +262,7 @@ blockquote {
 }
 
 .placeholder-icon {
-    background-image: url(../images/placeholder-icon.jpg);
+    background-image: url(placeholder-icon.jpg);
 }
 
 .author-content {
@@ -293,7 +293,7 @@ blockquote {
 }
 
 .share-icon {
-    background: url(../images/shareicon.png);
+    background: url(shareicon.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
