@@ -1,0 +1,119 @@
+@import "DesignSystem.css";
+
+body {
+    display: grid;
+    grid-template-areas: "head head head"
+                         "nav cont cont"
+                         "foot foot foot";
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 200px 1fr;
+}
+
+.title {
+    grid-area: head;
+    width: 100vw;
+}
+
+.navbar {
+    grid-area: nav;
+    height: auto;
+}
+
+.nav {
+    margin-bottom: 45px;
+}
+
+.page-content {
+    grid-area: cont;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.blog-card {
+    margin: 50px;
+}
+
+.image1 {
+    background-image: url("../images/ratchet.jpg");
+}
+
+.image2 {
+    background-image: url("../images/soundwave.jpg");
+}
+
+.image3 {
+    background-image: url("../images/prowl.jpg");
+}
+
+.image4 {
+    background-image: url("../images/shockwave.jpg");
+}
+
+.image5 {
+    background-image: url("../images/optimus.jpg");
+}
+
+.image6 {
+    background-image: url("../images/megatron.jpg");
+}
+
+.card2:hover,
+.card4:hover,
+.card6:hover {
+    box-shadow: 8px 8px 0 2px var(--tfPurple);
+}
+
+.footer {
+    grid-area: foot;
+    height: 120px;
+    width: 100vw;
+}
+
+.button {
+    margin-right: 30px;
+    margin-top: 10px;
+}
+
+
+/***** Media Breakpoints *****/
+@media(min-width:768px) and (max-width:1340px) {
+    .navbar {
+        justify-content: flex-start;
+    }
+    
+    .nav1 {
+        margin-top: 80px;
+    }
+}
+
+@media(min-width: 320px) and (max-width: 767px) {
+    body {
+        display: grid;
+        height: 100vh;
+        grid-template-areas: "head"
+                             "cont"
+                             "foot";
+        grid-template-rows: auto 1fr auto;
+        grid-template-columns: 1fr;
+    }
+    
+    .nav {
+        display: none;
+    }
+    
+    .page-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        text-align: center;
+        flex-wrap: nowrap;
+        margin-top: 50px;
+    }
+}
+
+/* note: media breakpoints weren't working when i
+imported from another .css file, so i had to place the
+code directly into the file*/

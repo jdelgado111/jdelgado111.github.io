@@ -1,0 +1,139 @@
+@import 'DesignSystem.css';
+@import 'index.css';
+
+body {
+    display: grid;
+    grid-template-rows: 130px 100px 100px 1fr 100px 100px;
+    grid-template-columns: 275px 120px 1fr 250px;
+    grid-template-areas: "head head head head"
+                         "nav . header ."
+                         "nav . author ."
+                         "nav . cont ."
+                         "nav back cont ."
+                         "foot foot foot foot";
+}
+
+.navbar {
+    justify-content: flex-start;
+}
+
+.nav1 {
+    margin-top: 80px;
+}
+
+.header {
+    grid-area: header;
+    margin-top: 10px;
+}
+
+.author {
+    grid-area: author;
+}
+
+.author-icon {
+    background-image: url(../images/cyclonus2.jpeg);
+}
+
+.name {
+    color: var(--tfPurple);
+}
+
+.post-content {
+    grid-area: cont;
+    margin: 50px 0 15px 0;
+}
+
+.image {
+    border-color: var(--tfPurple);
+}
+
+.caption {
+    border-color: var(--tfPurple);
+}
+
+.post-image1 {
+    float: left;
+    margin-right: 35px;
+    margin-top: 22px;
+    background-image: url(../images/Soundwave1.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 200px;
+    height: 300px;
+}
+
+.caption1 {
+    float: left;
+    clear: left;
+    margin-right: 35px;
+    width: 200px;
+}
+
+.post-image2 {
+    float: right;
+    margin-left: 35px;
+    margin-top: 22px;
+    background-image: url(../images/Soundwave2.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 258px;
+    height: 320px;
+}
+
+.caption2 {
+    float: right;
+    clear: right;
+    margin-left: 35px;
+    width: 258px;
+}
+
+.post-image3 {
+    float: left;
+    margin-right: 35px;
+    margin-top: 22px;
+    background-image: url(../images/Soundwave3.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 300px;
+    height: 250px;
+}
+
+.caption3 {
+    float: left;
+    clear: left;
+    margin-right: 35px;
+    width: 300px;
+}
+
+.back {
+    grid-area: back;
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration-line: underline;
+    margin-top: 30px;
+}
+
+.credit {
+    font-size: 10px;
+}
+
+/***** Media Breakpoint *****/
+
+@media(min-width: 320px) and (max-width: 767px) {
+    body {
+        display: grid;
+        height: 100vh;
+        grid-template-areas: "head head head"
+                             ". header ."
+                             ". author ."
+                             ". cont ."
+                             "back cont ."
+                             "foot foot foot";
+        grid-template-rows: auto 1fr auto;
+        grid-template-columns: 70px 1fr 50px;
+    }
+    
+    .nav {
+        display: none;
+    }
+}
