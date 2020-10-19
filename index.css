@@ -36,27 +36,27 @@ body {
 }
 
 .image1 {
-    background-image: url("../images/ratchet.jpg");
+    background-image: url("ratchet.jpg");
 }
 
 .image2 {
-    background-image: url("../images/soundwave.jpg");
+    background-image: url("soundwave.jpg");
 }
 
 .image3 {
-    background-image: url("../images/prowl.jpg");
+    background-image: url("prowl.jpg");
 }
 
 .image4 {
-    background-image: url("../images/shockwave.jpg");
+    background-image: url("shockwave.jpg");
 }
 
 .image5 {
-    background-image: url("../images/optimus.jpg");
+    background-image: url("optimus.jpg");
 }
 
 .image6 {
-    background-image: url("../images/megatron.jpg");
+    background-image: url("megatron.jpg");
 }
 
 .card2:hover,
