@@ -31,7 +31,7 @@ body {
 }
 
 .author-icon {
-    background-image: url(../images/cyclonus2.jpeg);
+    background-image: url(cyclonus2.jpeg);
 }
 
 .name {
@@ -55,7 +55,7 @@ body {
     float: left;
     margin-right: 35px;
     margin-top: 22px;
-    background-image: url(../images/Soundwave1.jpg);
+    background-image: url(Soundwave1.jpg);
     background-repeat: no-repeat;
     background-size: contain;
     width: 200px;
@@ -73,7 +73,7 @@ body {
     float: right;
     margin-left: 35px;
     margin-top: 22px;
-    background-image: url(../images/Soundwave2.jpg);
+    background-image: url(Soundwave2.jpg);
     background-repeat: no-repeat;
     background-size: contain;
     width: 258px;
@@ -91,7 +91,7 @@ body {
     float: left;
     margin-right: 35px;
     margin-top: 22px;
-    background-image: url(../images/Soundwave3.jpg);
+    background-image: url(Soundwave3.jpg);
     background-repeat: no-repeat;
     background-size: contain;
     width: 300px;
